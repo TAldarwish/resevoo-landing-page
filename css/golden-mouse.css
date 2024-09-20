@@ -1,0 +1,152 @@
+.flake1 {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #FFD700, #FFB700, #FF9900);
+    opacity: 1;
+    pointer-events: none;
+    animation: fadeOut 2s forwards, moveRandom 2s forwards;
+}
+
+.flake2 {
+    position: fixed;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: black;
+    opacity: 1;
+    pointer-events: none;
+    animation: fadeOut 2s forwards, moveRandom 2s forwards;
+}
+
+.flake3 {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    background: conic-gradient(from 180deg at 50% 50%, #FFD700, #FFB700, #FF9900);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    opacity: 1;
+    pointer-events: none;
+    animation: fadeOut 2s forwards, moveRandom 2s forwards;
+}
+
+.flake4 {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background: radial-gradient(circle, #FFDA44, #FFA500, #B8860B);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    opacity: 1;
+    pointer-events: none;
+    animation: fadeOut 2s forwards, moveRandom 2s forwards;
+}
+
+.flake5 {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: whitesmoke;
+    opacity: 1;
+    pointer-events: none;
+    animation: fadeOut 2s forwards, moveRandom 2s forwards;
+}
+
+.flake6 {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #FAFAD2;
+    opacity: 1;
+    pointer-events: none;
+    animation: fadeOut 2s forwards, moveRandom 2s forwards;
+}
+
+.flake7 {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #EEE8AA;
+    opacity: 1;
+    pointer-events: none;
+    animation: fadeOut 2s forwards, moveRandom 2s forwards;
+}
+
+.flake8 {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #DAA520;
+    opacity: 1;
+    pointer-events: none;
+    animation: fadeOut 2s forwards, moveRandom 2s forwards;
+}
+
+.flake9 {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #F0E68C;
+    opacity: 1;
+    pointer-events: none;
+    animation: fadeOut 2s forwards, moveRandom 2s forwards;
+}
+.flake10 {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #FFD700;
+    opacity: 1;
+    pointer-events: none;
+    animation: fadeOut 2s forwards, moveRandom 2s forwards;
+}
+.flake11 {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #FFA500;
+    opacity: 1;
+    pointer-events: none;
+    animation: fadeOut 2s forwards, moveRandom 2s forwards;
+}
+.flake12 {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #FF8C00;
+    opacity: 1;
+    pointer-events: none;
+    animation: fadeOut 2s forwards, moveRandom 2s forwards;
+}
+.flake13 {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #CD853F;
+    opacity: 1;
+    pointer-events: none;
+    animation: fadeOut 2s forwards, moveRandom 2s forwards;
+}
+
+/* Animation to fade out the flakes */
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+/* Animation for random movement */
+@keyframes moveRandom {
+    to {
+        transform: translateX(calc(-60px + 120px * var(--random-x))) translateY(calc(-60px + 120px * var(--random-y)));
+    }
+}
