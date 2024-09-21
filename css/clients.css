@@ -146,3 +146,65 @@
 .featured-client .client-info {
     padding-block: 1rem;
 }
+
+
+@media (min-width: 769px) and (max-width: 1040px) {
+
+    .clients .title {
+        font-size: 2.5rem;
+    }
+        
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .clients .title {
+        font-size: 2.25rem;
+    }
+
+    .featured-clients {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .clients .clients-flex {
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .clients .title {
+        font-size: 1.75rem;
+    }
+    .clients .sub-title {
+        font-size: 1rem;
+    }
+    .client-info h4 {
+        font-size: 1.25rem;
+    }
+    
+    .client-info p {
+        font-size: 1rem;
+    }
+    
+    .featured-clients {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .clients .clients-flex {
+        flex-direction: column-reverse;
+    }
+
+    .clients-swiper {
+        width: calc(200px + 4rem);
+    }
+    .swiper-slide {
+        padding: 2rem;
+    }
+    
+}

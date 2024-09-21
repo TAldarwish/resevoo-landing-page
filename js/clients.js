@@ -1,51 +1,51 @@
 const clients = [
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.jpg`,
+        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 1',
         address: 'Restaurant Address 1'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.jpg`,
+        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 2',
         address: 'Restaurant Address 2'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.jpg`,
+        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 3',
         address: 'Restaurant Address 3'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.jpg`,
+        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 4',
         address: 'Restaurant Address 4'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.jpg`,
+        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 5',
         address: 'Restaurant Address 5'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.jpg`,
+        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 6',
         address: 'Restaurant Address 6'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.jpg`,
+        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 7',
         address: 'Restaurant Address 7'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.jpg`,
+        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 8',
         address: 'Restaurant Address 8'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.jpg`,
+        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 1',
         address: 'Restaurant Address 9'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.jpg`,
+        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 1',
         address: 'Restaurant Address 1'
     },
@@ -53,17 +53,17 @@ const clients = [
 
 const featuredClients = [
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.jpg`,
+        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 1',
         address: 'Restaurant Address 1'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.jpg`,
+        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 2',
         address: 'Restaurant Address 2'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.jpg`,
+        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 3',
         address: 'Restaurant Address 3'
     },
@@ -79,22 +79,23 @@ clientAddressElement.textContent = clients[0].address;
 
 
 // Dynamically create the Swiper slides based on client data
+let clientCardsHTML = '';
 clients.forEach((client, index) => {
     if (swiperWrapper) {
-        const cardHTML = `
+        clientCardsHTML += `
         <div class="swiper-slide client-slide">
             <div class="slide-inner ${index === 0 ? 'flipped' : ''}">
                 <div class="slide-front">
                     <div class="shine"></div>
-                    <img class="resevoo" src="./img/logo.png" alt="Resevoo Logo">
+                    <img loading="lazy"  class="resevoo" src="./img/logo.webp" alt="Card Back Face">
                 </div>
                 <div class="slide-back">
-                    <img src="${client.image}" alt="Random Image">
+                    <img loading="lazy"  src="${client.image}" alt="${client.name}">
                 </div>
             </div>
         </div>
         `;
-        swiperWrapper.innerHTML += cardHTML;
+        swiperWrapper.innerHTML = clientCardsHTML;
     }
 });
 
@@ -154,6 +155,10 @@ var swiper = new Swiper('.clients-swiper', {
             });
 
             // GSAP timeline for the active card with 3D flipping effect
+            if (activeCardInner.__gsap) {
+                gsap.killTweensOf(activeCardInner);
+            }
+            
             const tl = gsap.timeline();
 
             tl.to(activeCardInner, {
@@ -195,18 +200,18 @@ var swiper = new Swiper('.clients-swiper', {
     }
 });
 
-
+let featuredClientsCardsHTML = ''
 featuredClients.forEach((client, index) => {
     if (featuredClientsWrapper) {
-        const cardHTML = `
+        featuredClientsCardsHTML += `
         <div class="featured-client">
             <div class="slide-inner">
                 <div class="slide-front">
                     <div class="shine"></div>
-                    <img class="resevoo" src="./img/logo.png" alt="Resevoo Logo">
+                    <img loading="lazy"  class="resevoo" src="./img/logo.webp" alt="Card Back Face">
                 </div>
                 <div class="slide-back">
-                    <img src="${client.image}" alt="Random Image">
+                    <img loading="lazy"  src="${client.image}" alt="${client.name}">
                 </div>
             </div>
             <div class="client-info">
@@ -215,7 +220,7 @@ featuredClients.forEach((client, index) => {
             </div>
         </div>
         `;
-        featuredClientsWrapper.innerHTML += cardHTML;
+        featuredClientsWrapper.innerHTML = featuredClientsCardsHTML;
     }
 });
 

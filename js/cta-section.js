@@ -1,5 +1,5 @@
 const ctaSection = document.querySelector('.cta-section')
-
+const firstButton = ctaSection.querySelector('.buttons button:first-child')
 const ctaTl = gsap.timeline({
     scrollTrigger: {
         trigger: ctaSection,

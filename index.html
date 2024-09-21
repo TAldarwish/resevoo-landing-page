@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resevoo</title>
+
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" sizes="180x180">
+
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/hero.css">
     <link rel="stylesheet" href="./css/clients.css">
@@ -20,7 +27,6 @@
     <script type="text/javascript" defer src="./js/golden-mouse.js"></script>
     <script type="text/javascript" defer src="./js/cta-section.js"></script>
     <script type="text/javascript" defer src="./js/buttons.js"></script>
-    <script type="text/javascript" defer src="./js/footer.js"></script>
     <script type="text/javascript" defer src="./js/social-media.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
@@ -33,10 +39,10 @@
     <header id="navigation">
         <div class="logo">
             <a href="./#" class="image-link">
-                <img src="./img/logo.png" alt="Resevoo Logo">
+                <img loading="lazy" src="./img/logo.webp" alt="Resevoo company logo">
             </a>
         </div>
-        <nav class="left">
+        <nav class="left" aria-label="Main navigation">
             <!-- <ul>
                 <li><a href="./#">
                     </a>
@@ -50,39 +56,50 @@
                 </div>
                 <div class="btn-overlay"></div>
                 <div class="glass-bg-container">
-                    <img class="glass-bg" src="./img/btn-bg.png" alt="">
+                    <img loading="lazy" class="glass-bg" src="./img/btn-bg.webp" alt="">
                 </div>
             </button>
         </div>
-        <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+        <button class="menu-toggle" aria-label="Open main navigation menu">&#9776;</button>
     </header>
     <aside id="sidebar" class="sidebar">
         <div class="head">
             <div class="logo">
                 <a href="./#" class="image-link">
-                    <img src="./img/logo.png" alt="Resevoo Logo">
+                    <img loading="lazy" src="./img/logo.webp" alt="Resevoo company logo">
                 </a>
             </div>
-            <button class="close-sidebar" aria-label="Close menu">&times;</button>
+            <button class="close-sidebar" aria-label="Close sidebar">&times;</button>
         </div>
-        <nav>
+        <nav aria-label="Sidebar navigation">
             <ul>
                 <!-- <li><a href="#"></a></li> -->
+                <li>
+                    <button data-scroll data-scroll-target="#downloadAppSection" class="btn">
+                        <div class="gold-text">
+                            Download App
+                        </div>
+                        <div class="btn-overlay"></div>
+                        <div class="glass-bg-container">
+                            <img loading="lazy" class="glass-bg" src="./img/btn-bg.webp" alt="">
+                        </div>
+                    </button>
+                </li>
             </ul>
         </nav>
     </aside>
     <div id="overlay" class="page-overlay"></div>
     <main class="base-layout">
         <section class="hero full-width">
-            <img class="hero-img" src="./img/hero-bg.jpg" alt="">
+            <img loading="lazy" class="hero-img" src="./img/hero-bg.webp" alt="">
             <div class="hero-overlay"></div>
 
             <h1 class="headline">
                 Reserve Your Culinary <span class="gold-filling"> Experience</span> of a Lifetime
             </h1>
-            <h3 class="sub-headline">
+            <h2 class="sub-headline">
                 Discover Exquisite Dining at the Finest Restaurants with Just a Few Taps
-            </h3>
+            </h2>
             <div class="buttons">
 
                 <button data-scroll data-scroll-target="#downloadAppSection" class="btn">
@@ -91,7 +108,7 @@
                     </div>
                     <div class="btn-overlay"></div>
                     <div class="glass-bg-container">
-                        <img class="glass-bg" src="./img/btn-bg.png" alt="">
+                        <img loading="lazy" class="glass-bg" src="./img/btn-bg.webp" alt="">
                     </div>
                 </button>
                 <button data-scroll data-scroll-target="#browseRestaurantSection" class="btn">
@@ -100,7 +117,7 @@
                     </div>
                     <div class="btn-overlay"></div>
                     <div class="glass-bg-container">
-                        <img class="glass-bg" src="./img/btn-bg.png" alt="">
+                        <img loading="lazy" class="glass-bg" src="./img/btn-bg.webp" alt="">
                     </div>
                 </button>
             </div>
@@ -142,363 +159,37 @@
                         Available on App Store & Google Play Store.
                     </p>
                     <div class="buttons">
-                        <button><img src="./img/app-store.png" alt=""></button>
-                        <button><img src="./img/google-play.png" alt=""></button>
+                        <button aria-label="App Store download button">
+                            <img loading="lazy" src="./img/app-store.webp" alt="App Store download button">
+                        </button>
+                        <button aria-label="Google Play Store download button">
+                            <img loading="lazy" src="./img/google-play.webp" alt="Google Play Store download button">
+                        </button>
                     </div>
                 </div>
                 <div class="phone">
-                    <img class="frame" src="./img/iphone-frame.png" alt="">
-                    <img class="screenshot" src="./img/phone-bg.jpg" alt="">
+                    <img loading="lazy" class="frame" src="./img/iphone-frame.webp" alt="">
+                    <img loading="lazy" class="screenshot" src="./img/phone-bg.webp" alt="">
                 </div>
             </div>
         </section>
         <footer>
             <div class="logo">
-                <img src="./img/logo.png" alt="Resevoo Logo">
+                <img loading="lazy" src="./img/logo.webp" alt="Resevoo company logo">
             </div>
             <div class="footer-links">
-                <div class="social-media-list">
-                    <a class="social-media" target="_blank" href="https://facebook.com">
-                        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="10 10 80 80" width="80"
-                            height="80">
-
-                            <g id="bg">
-                                <defs>
-
-                                    <linearGradient id="P" gradientUnits="userSpaceOnUse" />
-                                    <linearGradient id="g1" x2="1" href="#P"
-                                        gradientTransform="matrix(0,50.558,-50.559,0,78.614,22.69)">
-                                        <stop stop-color="#b27f2a" />
-                                        <stop offset=".33" stop-color="#f4dd62" />
-                                        <stop offset=".52" stop-color="#f4e38b" />
-                                        <stop offset=".66" stop-color="#f4dd62" />
-                                        <stop offset="1" stop-color="#b27f2a" />
-                                    </linearGradient>
-                                    <linearGradient id="g2" x2="1" href="#P"
-                                        gradientTransform="matrix(42.326,41.043,-41.045,42.328,21.098,-5.601)">
-                                        <stop stop-color="#0d0e19" />
-                                        <stop offset=".6" stop-color="#20222a" />
-                                        <stop offset="1" stop-color="#4e5266" />
-                                    </linearGradient>
-                                    <linearGradient id="g3" x2="1" href="#P"
-                                        gradientTransform="matrix(-40.894,-40.377,40.377,-40.894,89.155,111.628)">
-                                        <stop stop-color="#0d0e19" />
-                                        <stop offset=".6" stop-color="#20222a" />
-                                        <stop offset="1" stop-color="#4e5266" />
-                                    </linearGradient>
-                                    <linearGradient id="g4" x2="1" href="#P"
-                                        gradientTransform="matrix(-45.472,50.662,-50.661,-45.472,106.28,17.057)">
-                                        <stop stop-color="#0d0e19" />
-                                        <stop offset=".6" stop-color="#20222a" />
-                                        <stop offset="1" stop-color="#4e5266" />
-                                    </linearGradient>
-                                    <linearGradient id="g5" x2="1" href="#P"
-                                        gradientTransform="matrix(-57.561,51.165,-51.167,-57.563,69.418,59.196)">
-                                        <stop stop-color="#0d0e19" />
-                                        <stop offset=".6" stop-color="#20222a" />
-                                        <stop offset="1" stop-color="#4e5266" />
-                                    </linearGradient>
-                                    <linearGradient id="g6" x2="1" href="#P"
-                                        gradientTransform="matrix(15.879,17.392,-33.308,30.412,56.242,25.542)">
-                                        <stop stop-color="#b27f2a" />
-                                        <stop offset=".33" stop-color="#f4dd62" />
-                                        <stop offset=".52" stop-color="#f4e38b" />
-                                        <stop offset=".66" stop-color="#f4dd62" />
-                                        <stop offset="1" stop-color="#b27f2a" />
-                                    </linearGradient>
-                                </defs>
-                                <path class="a" d="m51.9 76.3l-26.8-26.8 26.8-26.7 26.7 26.7z" />
-                                <path class="b" d="m51.9 24.2l-12.7 12.7-12.6 12.6h25.3z" />
-                                <path class="c" d="m51.9 74.8l12.6-12.6 12.6-12.7h-25.2z" />
-                                <path class="d" d="m77.1 49.5l-12.6-12.6-12.6-12.7v25.3z" />
-                                <path class="e" d="m26.6 49.5l12.6 12.7 12.7 12.6v-25.3z" />
-                            </g>
-
-                            <path fill-rule="evenodd" class="f"
-                                d="m54.7 43.1q0.9 0 1.8 0 0 0 0.2 0v-2.9q-0.5-0.1-1-0.1-0.8-0.1-1.7-0.1c-0.9 0-1.7 0.3-2.5 0.8-0.8 0.6-1.3 1.5-1.5 2.5q-0.1 0.6-0.1 1.2 0 1 0 2v0.3h-2.8v3.3h2.8v8.3h3.5v-8.3h2.8q0.2-1.7 0.4-3.3-0.3 0-0.6 0c-0.8 0-2.7 0-2.7 0 0 0 0-1.7 0.1-2.4 0-1 0.6-1.3 1.3-1.3z" />
-                            <style>
-                                .a {
-                                    fill: url(#g1)
-                                }
-
-                                .b {
-                                    fill: url(#g2)
-                                }
-
-                                .c {
-                                    fill: url(#g3)
-                                }
-
-                                .d {
-                                    fill: url(#g4)
-                                }
-
-                                .e {
-                                    fill: url(#g5)
-                                }
-
-                                .f {
-                                    fill: url(#g6)
-                                }
-                            </style>
-                        </svg> </a>
-                        <a class="social-media" target="_blank" href="https://facebook.com">
-                            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="10 10 80 80" width="80"
-                                height="80">
-    
-                                <g id="bg">
-                                    <defs>
-    
-                                        <linearGradient id="P" gradientUnits="userSpaceOnUse" />
-                                        <linearGradient id="g1" x2="1" href="#P"
-                                            gradientTransform="matrix(0,50.558,-50.559,0,78.614,22.69)">
-                                            <stop stop-color="#b27f2a" />
-                                            <stop offset=".33" stop-color="#f4dd62" />
-                                            <stop offset=".52" stop-color="#f4e38b" />
-                                            <stop offset=".66" stop-color="#f4dd62" />
-                                            <stop offset="1" stop-color="#b27f2a" />
-                                        </linearGradient>
-                                        <linearGradient id="g2" x2="1" href="#P"
-                                            gradientTransform="matrix(42.326,41.043,-41.045,42.328,21.098,-5.601)">
-                                            <stop stop-color="#0d0e19" />
-                                            <stop offset=".6" stop-color="#20222a" />
-                                            <stop offset="1" stop-color="#4e5266" />
-                                        </linearGradient>
-                                        <linearGradient id="g3" x2="1" href="#P"
-                                            gradientTransform="matrix(-40.894,-40.377,40.377,-40.894,89.155,111.628)">
-                                            <stop stop-color="#0d0e19" />
-                                            <stop offset=".6" stop-color="#20222a" />
-                                            <stop offset="1" stop-color="#4e5266" />
-                                        </linearGradient>
-                                        <linearGradient id="g4" x2="1" href="#P"
-                                            gradientTransform="matrix(-45.472,50.662,-50.661,-45.472,106.28,17.057)">
-                                            <stop stop-color="#0d0e19" />
-                                            <stop offset=".6" stop-color="#20222a" />
-                                            <stop offset="1" stop-color="#4e5266" />
-                                        </linearGradient>
-                                        <linearGradient id="g5" x2="1" href="#P"
-                                            gradientTransform="matrix(-57.561,51.165,-51.167,-57.563,69.418,59.196)">
-                                            <stop stop-color="#0d0e19" />
-                                            <stop offset=".6" stop-color="#20222a" />
-                                            <stop offset="1" stop-color="#4e5266" />
-                                        </linearGradient>
-                                        <linearGradient id="g6" x2="1" href="#P"
-                                            gradientTransform="matrix(15.879,17.392,-33.308,30.412,56.242,25.542)">
-                                            <stop stop-color="#b27f2a" />
-                                            <stop offset=".33" stop-color="#f4dd62" />
-                                            <stop offset=".52" stop-color="#f4e38b" />
-                                            <stop offset=".66" stop-color="#f4dd62" />
-                                            <stop offset="1" stop-color="#b27f2a" />
-                                        </linearGradient>
-                                    </defs>
-                                    <path class="a" d="m51.9 76.3l-26.8-26.8 26.8-26.7 26.7 26.7z" />
-                                    <path class="b" d="m51.9 24.2l-12.7 12.7-12.6 12.6h25.3z" />
-                                    <path class="c" d="m51.9 74.8l12.6-12.6 12.6-12.7h-25.2z" />
-                                    <path class="d" d="m77.1 49.5l-12.6-12.6-12.6-12.7v25.3z" />
-                                    <path class="e" d="m26.6 49.5l12.6 12.7 12.7 12.6v-25.3z" />
-                                </g>
-    
-                                <path fill-rule="evenodd" class="f"
-                                    d="m54.7 43.1q0.9 0 1.8 0 0 0 0.2 0v-2.9q-0.5-0.1-1-0.1-0.8-0.1-1.7-0.1c-0.9 0-1.7 0.3-2.5 0.8-0.8 0.6-1.3 1.5-1.5 2.5q-0.1 0.6-0.1 1.2 0 1 0 2v0.3h-2.8v3.3h2.8v8.3h3.5v-8.3h2.8q0.2-1.7 0.4-3.3-0.3 0-0.6 0c-0.8 0-2.7 0-2.7 0 0 0 0-1.7 0.1-2.4 0-1 0.6-1.3 1.3-1.3z" />
-                                <style>
-                                    .a {
-                                        fill: url(#g1)
-                                    }
-    
-                                    .b {
-                                        fill: url(#g2)
-                                    }
-    
-                                    .c {
-                                        fill: url(#g3)
-                                    }
-    
-                                    .d {
-                                        fill: url(#g4)
-                                    }
-    
-                                    .e {
-                                        fill: url(#g5)
-                                    }
-    
-                                    .f {
-                                        fill: url(#g6)
-                                    }
-                                </style>
-                            </svg> </a>
-                            <a class="social-media" target="_blank" href="https://facebook.com">
-                                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="10 10 80 80" width="80"
-                                    height="80">
-        
-                                    <g id="bg">
-                                        <defs>
-        
-                                            <linearGradient id="P" gradientUnits="userSpaceOnUse" />
-                                            <linearGradient id="g1" x2="1" href="#P"
-                                                gradientTransform="matrix(0,50.558,-50.559,0,78.614,22.69)">
-                                                <stop stop-color="#b27f2a" />
-                                                <stop offset=".33" stop-color="#f4dd62" />
-                                                <stop offset=".52" stop-color="#f4e38b" />
-                                                <stop offset=".66" stop-color="#f4dd62" />
-                                                <stop offset="1" stop-color="#b27f2a" />
-                                            </linearGradient>
-                                            <linearGradient id="g2" x2="1" href="#P"
-                                                gradientTransform="matrix(42.326,41.043,-41.045,42.328,21.098,-5.601)">
-                                                <stop stop-color="#0d0e19" />
-                                                <stop offset=".6" stop-color="#20222a" />
-                                                <stop offset="1" stop-color="#4e5266" />
-                                            </linearGradient>
-                                            <linearGradient id="g3" x2="1" href="#P"
-                                                gradientTransform="matrix(-40.894,-40.377,40.377,-40.894,89.155,111.628)">
-                                                <stop stop-color="#0d0e19" />
-                                                <stop offset=".6" stop-color="#20222a" />
-                                                <stop offset="1" stop-color="#4e5266" />
-                                            </linearGradient>
-                                            <linearGradient id="g4" x2="1" href="#P"
-                                                gradientTransform="matrix(-45.472,50.662,-50.661,-45.472,106.28,17.057)">
-                                                <stop stop-color="#0d0e19" />
-                                                <stop offset=".6" stop-color="#20222a" />
-                                                <stop offset="1" stop-color="#4e5266" />
-                                            </linearGradient>
-                                            <linearGradient id="g5" x2="1" href="#P"
-                                                gradientTransform="matrix(-57.561,51.165,-51.167,-57.563,69.418,59.196)">
-                                                <stop stop-color="#0d0e19" />
-                                                <stop offset=".6" stop-color="#20222a" />
-                                                <stop offset="1" stop-color="#4e5266" />
-                                            </linearGradient>
-                                            <linearGradient id="g6" x2="1" href="#P"
-                                                gradientTransform="matrix(15.879,17.392,-33.308,30.412,56.242,25.542)">
-                                                <stop stop-color="#b27f2a" />
-                                                <stop offset=".33" stop-color="#f4dd62" />
-                                                <stop offset=".52" stop-color="#f4e38b" />
-                                                <stop offset=".66" stop-color="#f4dd62" />
-                                                <stop offset="1" stop-color="#b27f2a" />
-                                            </linearGradient>
-                                        </defs>
-                                        <path class="a" d="m51.9 76.3l-26.8-26.8 26.8-26.7 26.7 26.7z" />
-                                        <path class="b" d="m51.9 24.2l-12.7 12.7-12.6 12.6h25.3z" />
-                                        <path class="c" d="m51.9 74.8l12.6-12.6 12.6-12.7h-25.2z" />
-                                        <path class="d" d="m77.1 49.5l-12.6-12.6-12.6-12.7v25.3z" />
-                                        <path class="e" d="m26.6 49.5l12.6 12.7 12.7 12.6v-25.3z" />
-                                    </g>
-        
-                                    <path id="icon" fill-rule="evenodd" class="f"
-                                        d="m54.7 43.1q0.9 0 1.8 0 0 0 0.2 0v-2.9q-0.5-0.1-1-0.1-0.8-0.1-1.7-0.1c-0.9 0-1.7 0.3-2.5 0.8-0.8 0.6-1.3 1.5-1.5 2.5q-0.1 0.6-0.1 1.2 0 1 0 2v0.3h-2.8v3.3h2.8v8.3h3.5v-8.3h2.8q0.2-1.7 0.4-3.3-0.3 0-0.6 0c-0.8 0-2.7 0-2.7 0 0 0 0-1.7 0.1-2.4 0-1 0.6-1.3 1.3-1.3z" />
-                                    <style>
-                                        .a {
-                                            fill: url(#g1)
-                                        }
-        
-                                        .b {
-                                            fill: url(#g2)
-                                        }
-        
-                                        .c {
-                                            fill: url(#g3)
-                                        }
-        
-                                        .d {
-                                            fill: url(#g4)
-                                        }
-        
-                                        .e {
-                                            fill: url(#g5)
-                                        }
-        
-                                        .f {
-                                            fill: url(#g6)
-                                        }
-                                    </style>
-                                </svg> </a>
-            
-                    <a class="social-media" target="_blank" href="https://facebook.com">
-                        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="10 10 80 80" width="80"
-                            height="80">
-
-                            <g id="bg">
-                                <defs>
-
-                                    <linearGradient id="P" gradientUnits="userSpaceOnUse" />
-                                    <linearGradient id="g1" x2="1" href="#P"
-                                        gradientTransform="matrix(0,50.558,-50.559,0,78.614,22.69)">
-                                        <stop stop-color="#b27f2a" />
-                                        <stop offset=".33" stop-color="#f4dd62" />
-                                        <stop offset=".52" stop-color="#f4e38b" />
-                                        <stop offset=".66" stop-color="#f4dd62" />
-                                        <stop offset="1" stop-color="#b27f2a" />
-                                    </linearGradient>
-                                    <linearGradient id="g2" x2="1" href="#P"
-                                        gradientTransform="matrix(42.326,41.043,-41.045,42.328,21.098,-5.601)">
-                                        <stop stop-color="#0d0e19" />
-                                        <stop offset=".6" stop-color="#20222a" />
-                                        <stop offset="1" stop-color="#4e5266" />
-                                    </linearGradient>
-                                    <linearGradient id="g3" x2="1" href="#P"
-                                        gradientTransform="matrix(-40.894,-40.377,40.377,-40.894,89.155,111.628)">
-                                        <stop stop-color="#0d0e19" />
-                                        <stop offset=".6" stop-color="#20222a" />
-                                        <stop offset="1" stop-color="#4e5266" />
-                                    </linearGradient>
-                                    <linearGradient id="g4" x2="1" href="#P"
-                                        gradientTransform="matrix(-45.472,50.662,-50.661,-45.472,106.28,17.057)">
-                                        <stop stop-color="#0d0e19" />
-                                        <stop offset=".6" stop-color="#20222a" />
-                                        <stop offset="1" stop-color="#4e5266" />
-                                    </linearGradient>
-                                    <linearGradient id="g5" x2="1" href="#P"
-                                        gradientTransform="matrix(-57.561,51.165,-51.167,-57.563,69.418,59.196)">
-                                        <stop stop-color="#0d0e19" />
-                                        <stop offset=".6" stop-color="#20222a" />
-                                        <stop offset="1" stop-color="#4e5266" />
-                                    </linearGradient>
-                                    <linearGradient id="g6" x2="1" href="#P"
-                                        gradientTransform="matrix(15.879,17.392,-33.308,30.412,56.242,25.542)">
-                                        <stop stop-color="#b27f2a" />
-                                        <stop offset=".33" stop-color="#f4dd62" />
-                                        <stop offset=".52" stop-color="#f4e38b" />
-                                        <stop offset=".66" stop-color="#f4dd62" />
-                                        <stop offset="1" stop-color="#b27f2a" />
-                                    </linearGradient>
-                                </defs>
-                                <path class="a" d="m51.9 76.3l-26.8-26.8 26.8-26.7 26.7 26.7z" />
-                                <path class="b" d="m51.9 24.2l-12.7 12.7-12.6 12.6h25.3z" />
-                                <path class="c" d="m51.9 74.8l12.6-12.6 12.6-12.7h-25.2z" />
-                                <path class="d" d="m77.1 49.5l-12.6-12.6-12.6-12.7v25.3z" />
-                                <path class="e" d="m26.6 49.5l12.6 12.7 12.7 12.6v-25.3z" />
-                            </g>
-
-                            <path fill-rule="evenodd" class="f"
-                                d="m54.7 43.1q0.9 0 1.8 0 0 0 0.2 0v-2.9q-0.5-0.1-1-0.1-0.8-0.1-1.7-0.1c-0.9 0-1.7 0.3-2.5 0.8-0.8 0.6-1.3 1.5-1.5 2.5q-0.1 0.6-0.1 1.2 0 1 0 2v0.3h-2.8v3.3h2.8v8.3h3.5v-8.3h2.8q0.2-1.7 0.4-3.3-0.3 0-0.6 0c-0.8 0-2.7 0-2.7 0 0 0 0-1.7 0.1-2.4 0-1 0.6-1.3 1.3-1.3z" />
-                            <style>
-                                .a {
-                                    fill: url(#g1)
-                                }
-
-                                .b {
-                                    fill: url(#g2)
-                                }
-
-                                .c {
-                                    fill: url(#g3)
-                                }
-
-                                .d {
-                                    fill: url(#g4)
-                                }
-
-                                .e {
-                                    fill: url(#g5)
-                                }
-
-                                .f {
-                                    fill: url(#g6)
-                                }
-                            </style>
-                        </svg> </a>
+                <div class="left">
+                    <div class="contact-info">
+                        <a href="mailto:info@resevoo.com">info@resevoo.com</a>
+                        <a href="tel:+971000000000">+971000000000</a>
+                    </div>
+                    <div class="social-media-list">
+                        <!-- DONE USING SOCIAL MEDIA JS -->
+                    </div>
                 </div>
                 <div class="footer-cta">
-                    <button><img src="./img/app-store.png" alt=""></button>
-                    <button><img src="./img/google-play.png" alt=""></button>
+                    <img loading="lazy" src="./img/app-store.webp" alt="App Store download button">
+                    <img loading="lazy" src="./img/google-play.webp" alt="Google Play Store download button">
                 </div>
             </div>
         </footer>
@@ -512,6 +203,12 @@
         lenis.raf(time * 2000)
     })
     gsap.ticker.lagSmoothing(0)
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.defaults({
+        scroller: window,
+        debounce: true, // Ensure scroll events are debounced
+        throttle: 200   // Throttle scroll events to run every 200ms
+    });
 
 </script>
 

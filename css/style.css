@@ -16,6 +16,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
 body {
@@ -60,13 +61,13 @@ h6 {
 @font-face {
     font-family: Lora;
     src: url("../fonts/Lora.ttf");
+    font-display: fallback;
 }
 
 @font-face {
     font-family: PlayfairDisplay;
     src: url("../fonts/PlayfairDisplay.ttf");
-    font-weight: normal;
-
+    font-display: fallback;
 }
 
 
@@ -161,7 +162,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-block: 1rem;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 9999;
     background-color: var(--clr-bg);
@@ -169,6 +170,7 @@ header {
     max-height: 10svh;
     isolation: isolate;
     background-color: var(--clr-black);
+    padding-block: 3rem;
 }
 
 header::after {
@@ -230,7 +232,7 @@ header .logo {
 }
 
 header .logo img {
-    width: 50%;
+    width: 70%;
 }
 
 header .right {
@@ -352,6 +354,7 @@ header .right {
     transition: box-shadow 300ms ease-out;
     cursor: pointer;
     outline: none;
+    width: fit-content
 }
 
 .btn::after {
@@ -380,6 +383,12 @@ header .right {
     background: black;
     border-radius: inherit;
     z-index: -1;
+}
+
+.btn .glass-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .btn::before {
@@ -428,7 +437,6 @@ header .right {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* color: var(--clr-primary); */
 }
 
 .btn:hover .gold-text,
@@ -459,11 +467,16 @@ header .right {
     }
 
     header .left {
+        visibility: hidden;
+    }
+    header .right {
         width: 50%;
     }
-
-    .logo img {
-        width: 80%;
+    header .logo {
+        width: 50%;
+    }
+    header .logo img {
+        width: 100%;
     }
 }
 
@@ -494,14 +507,16 @@ header .right {
     a:not(.image-link) div {
         padding: .25rem .5rem;
     }
+    header .logo {
+        width: 50%;
+    }
 
-    .logo img {
-        width: 40%;
+    header .logo img {
+        width: 50%;
     }
 }
 
 @media (max-width: 576px) {
-
     .menu-toggle {
         display: block;
     }
@@ -509,7 +524,10 @@ header .right {
     .sidebar {
         transform: translateX(0);
     }
-
+    .sidebar {
+        max-width: 80svw;
+    }
+    
     header {
         padding-inline: 2rem;
     }
@@ -533,7 +551,7 @@ header .right {
         padding: .25rem .5rem;
     }
 
-    .logo img {
+    header .logo img {
         width: 55%;
     }
 

@@ -2,9 +2,11 @@
 const scrollButtons = document.querySelectorAll('[data-scroll]');
 // Add event listener to each button
 scrollButtons.forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         const targetSection = this.getAttribute('data-scroll-target'); // Get the section to scroll to
-        document.querySelector(targetSection).scrollIntoView({
+        requestAnimationFrame(() => {
+            document.querySelector(targetSection).scrollIntoView({
+            });
         });
     });
 });
