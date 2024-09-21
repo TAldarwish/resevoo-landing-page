@@ -19,11 +19,21 @@
     font-weight: 400;
 }
 
+.clients .clients-flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 
 .clients-swiper {
-    width: 300px;
+    width: calc(250px + 8rem);
     aspect-ratio: 2 / 3;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
+
 .swiper-slide {
     display: flex;
     align-items: center;
@@ -31,7 +41,6 @@
     border-radius: 18px;
     font-size: 22px;
     font-weight: bold;
-    width: 200px;
     padding: 4rem;
 }
 
@@ -51,14 +60,16 @@
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transition: transform 0.8s ease; 
+    transition: transform 0.8s ease;
+    /* overflow: hidden; */
 }
 
 .client-slide .slide-inner.flipped {
     transform: rotateY(180deg);
 }
 
-.slide-front, .slide-back {
+.slide-front,
+.slide-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -83,9 +94,55 @@
 .slide-front {
     background: black;
     border: 2px solid var(--clr-primary);
+    overflow: hidden;
+    /* position: relative; */
 }
+
 .slide-front img {
     width: 100%;
     object-fit: contain;
     rotate: -90deg;
+}
+
+.client-info h4 {
+    font-size: 1.75rem;
+}
+
+.client-info p {
+    font-size: 1.125rem;
+}
+
+.slide-front .shine {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 100%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.5);
+    /* Light color for reflection */
+    transform: rotate(45deg);
+    opacity: 0;
+    pointer-events: none;
+    /* Don't interfere with card interactions */
+    transition: opacity 0.3s;
+}
+
+.featured-clients {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 2rem;
+    padding-block: 3rem;
+}
+.featured-client {
+    height: fit-content;
+}
+.featured-clients .slide-inner {
+    max-width: 300px;
+    aspect-ratio: 2 / 3;
+}
+
+.featured-client .client-info {
+    padding-block: 1rem;
 }

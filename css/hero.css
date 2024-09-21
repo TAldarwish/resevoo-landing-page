@@ -38,3 +38,12 @@
     display: flex;
     gap: 1rem;
 }
+.hero .gold-filling {
+    background:
+        linear-gradient(45deg, #FEDB37 0%, #FDB931 12%, #d6a438 20%, #a07d2b 35%, var(--clr-white) 50%, var(--clr-white) 50%);
+    background-size: 300%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

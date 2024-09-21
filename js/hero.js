@@ -30,4 +30,8 @@ tl.from(".hero .headline", {
     autoAlpha: 0,
     duration: .7,
     ease: 'expo.out'
+}, '<').to(".hero .headline .gold-filling", {
+    backgroundPosition: '0',
+    duration: .7,
+    ease: 'power3.out'
 }, '<');
