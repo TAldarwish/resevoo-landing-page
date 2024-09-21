@@ -1,51 +1,51 @@
 const clients = [
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 1',
         address: 'Restaurant Address 1'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 2',
         address: 'Restaurant Address 2'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 3',
         address: 'Restaurant Address 3'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 4',
         address: 'Restaurant Address 4'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 5',
         address: 'Restaurant Address 5'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 6',
         address: 'Restaurant Address 6'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 7',
         address: 'Restaurant Address 7'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 8',
         address: 'Restaurant Address 8'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 1',
         address: 'Restaurant Address 9'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 1',
         address: 'Restaurant Address 1'
     },
@@ -53,17 +53,17 @@ const clients = [
 
 const featuredClients = [
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 1',
         address: 'Restaurant Address 1'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 2',
         address: 'Restaurant Address 2'
     },
     {
-        image: `../img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Restaurant Name 3',
         address: 'Restaurant Address 3'
     },
