@@ -1,9 +1,26 @@
 footer {
+    background-image: url('../img/footer-bg.webp');
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    isolation: isolate;
+}
+footer .footer-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, hsl(from black h s l / .7), hsl(from black h s l / 1));
+    opacity: .5;
+    z-index: -1;
+}
+
+.footer-inner {
+    min-height: 50svh;
     padding-block: 4rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
 }
 

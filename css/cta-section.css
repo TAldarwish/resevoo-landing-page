@@ -32,7 +32,11 @@
     transition: scale 200ms ease-out;
     padding: 0;
 }
-
+.cta-section .slogan {
+    font-size: 2.25rem;
+    font-weight: bold;
+    font-family: var(--font-header);
+}
 .cta-section .buttons img {
     width: 200px;
 }
@@ -79,6 +83,9 @@
     .cta-section .title {
         font-size: 2.5rem;
     }
+    .cta-section .slogan {
+        font-size: 2rem;
+    }
 
 }
 
@@ -86,7 +93,9 @@
     .cta-section .title {
         font-size: 2.25rem;
     }
-
+    .cta-section .slogan {
+        font-size: 1.5rem;
+    }
     .cta-section-inner {
         display: flex;
         flex-direction: column;
@@ -101,6 +110,9 @@
 @media (max-width: 576px) {
     .cta-section .title {
         font-size: 1.75rem;
+    }
+    .cta-section .slogan {
+        font-size: 1.25rem;
     }
     .cta-section .content p {
         font-size: 1rem;

@@ -18,6 +18,11 @@ ctaTl.from('.cta-section .title', {
     duration: .5,
     autoAlpha: 0,
     ease: 'power3.out'
+}).from('.cta-section .slogan', {
+    x: -100,
+    duration: 2,
+    autoAlpha: 0,
+    ease: 'elastic.out'
 }).from('.cta-section .buttons button:first-child', {
     duration: .5,
     x: -50,
