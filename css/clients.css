@@ -21,9 +21,10 @@
 
 .clients .clients-flex {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
-    justify-content: space-around;
+    gap: 1rem;
 }
 
 
@@ -32,6 +33,7 @@
     aspect-ratio: 2 / 3;
     margin-left: 0 !important;
     margin-right: 0 !important;
+    place-self: end;
 }
 
 .swiper-slide {
@@ -168,8 +170,22 @@
         justify-content: center;
     }
     
+    .featured-client {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .clients-swiper {
+        place-self: center;
+    }
+    
     .clients .clients-flex {
+        display: flex;
         flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
     }
 
 }
@@ -195,9 +211,21 @@
         align-items: center;
         justify-content: center;
     }
-    
+    .featured-client {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .clients-swiper {
+        place-self: center;
+    }
     .clients .clients-flex {
+        display: flex;
         flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
     }
 
     .clients-swiper {

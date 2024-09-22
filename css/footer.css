@@ -125,7 +125,7 @@ footer .footer-links {
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
-    footer {
+    .footer-inner {
         padding-block: 2rem;
         gap: 2rem;
     }
@@ -150,7 +150,7 @@ footer .footer-links {
 }
 
 @media (max-width: 576px) {
-    footer {
+    .footer-inner {
         padding-block: 2rem;
         gap: 2rem;
     }
