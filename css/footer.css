@@ -106,6 +106,7 @@ footer .footer-links {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     transition: background-position 300ms ease-out;
+    font-weight: bold;
 }
 
 .footer-links .contact-info a:hover,
@@ -113,6 +114,14 @@ footer .footer-links {
     background-position: 0;
 }
 
+footer .navigation ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+footer .navigation .navigation-link {
+    font-size: 1.5rem;
+}
 
 @media (min-width: 769px) and (max-width: 1040px) {
     .social-media-list .social-media {
@@ -132,6 +141,12 @@ footer .footer-links {
     
     footer .logo {
         margin-inline: auto;
+    }
+    footer .navigation {
+        margin-inline: auto;
+    }
+    footer .navigation ul {
+        align-items: center;
     }
 
     footer .footer-links {
@@ -161,6 +176,12 @@ footer .footer-links {
         justify-content: center;
     }
 
+    footer .navigation {
+        margin-inline: auto;
+    }
+    footer .navigation ul {
+        align-items: center;
+    }
     footer .footer-links {
         flex-direction: column-reverse;
         align-items: center;

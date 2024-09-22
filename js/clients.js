@@ -51,7 +51,7 @@ const clients = [
     },
 ];
 
-const featuredClients = [
+const slideClients = [
     {
         image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
         name: 'Le Bernardin',
@@ -67,9 +67,14 @@ const featuredClients = [
         name: 'Arpège',
         address: '84 Rue de Varenne, 75007 Paris, France'
     },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
 ];
 const swiperWrapper = document.querySelector('.swiper-wrapper');
-const featuredClientsWrapper = document.querySelector('.featured-clients');
+const clientsSliderWrapper = document.querySelector('.clients-slider');
 const clientNameElement = document.getElementById('client-name');
 const clientAddressElement = document.getElementById('client-address');
 
@@ -104,7 +109,7 @@ var swiper = new Swiper('.clients-swiper', {
     effect: 'cards',
     rewind: true,
     autoplay: {
-        delay: 3000,
+        delay: 2000,
         disableOnInteraction: false // Continue autoplay after manual swiping
     },
     on: {
@@ -131,14 +136,14 @@ var swiper = new Swiper('.clients-swiper', {
                     top: '100%',
                     left: '100%',
                     opacity: 0.2, // Shine intensity
-                    duration: 0.5,
+                    duration: 0.3,
                     ease: "power2.inOut"
                 });
 
             // Fade out the client name and address
             gsap.to([clientNameElement, clientAddressElement], {
                 opacity: 0,
-                duration: 0.3,
+                duration: 0.2,
                 ease: "power1.inOut",
                 onComplete: () => {
                     // Update the client name and address after fade out
@@ -148,7 +153,7 @@ var swiper = new Swiper('.clients-swiper', {
                     // Fade them back in
                     gsap.to([clientNameElement, clientAddressElement], {
                         opacity: 1,
-                        duration: 0.3,
+                        duration: 0.2,
                         ease: "power1.inOut"
                     });
                 }
@@ -158,21 +163,21 @@ var swiper = new Swiper('.clients-swiper', {
             if (activeCardInner.__gsap) {
                 gsap.killTweensOf(activeCardInner);
             }
-            
+
             const tl = gsap.timeline();
 
             tl.to(activeCardInner, {
                 rotateX: 120,  // Slight X-axis tilt for 3D effect
                 rotateZ: 30,  // Slight Z-axis tilt for 3D effect
                 rotateY: 90,  // Start flipping halfway on Y-axis
-                duration: 0.3,
+                duration: 0.2,
                 ease: "power2.inOut",
             })
                 .to(activeCardInner, {
                     rotateX: 0,   // Reset X-axis tilt
                     rotateZ: 0,   // Reset Z-axis tilt
                     rotateY: 180, // Complete the Y-axis flip
-                    duration: 0.3,
+                    duration: 0.2,
                     ease: "power2.inOut",
                 });
 
@@ -185,7 +190,7 @@ var swiper = new Swiper('.clients-swiper', {
                         rotateX: 0,  // Ensure X-axis reset
                         rotateZ: 0,  // Ensure Z-axis reset
                         rotateY: 0,  // Reset to original position on Y-axis
-                        duration: 0.6,
+                        duration: 0.4,
                         ease: "power2.inOut",
                         onComplete: () => {
                             cardInner.classList.remove('open'); // Remove 'open' class if set
@@ -200,90 +205,142 @@ var swiper = new Swiper('.clients-swiper', {
     }
 });
 
-let featuredClientsCardsHTML = ''
-featuredClients.forEach((client, index) => {
-    if (featuredClientsWrapper) {
-        featuredClientsCardsHTML += `
-        <div class="featured-client">
-            <div class="slide-inner">
-                <div class="slide-front">
-                    <div class="shine"></div>
-                    <img loading="lazy"  class="resevoo" src="./img/logo.webp" alt="Card Back Face">
-                </div>
-                <div class="slide-back">
-                    <img loading="lazy"  src="${client.image}" alt="${client.name}">
-                </div>
-            </div>
-            <div class="client-info">
-                <h4>${client.name}</h4>
-                <p>${client.address}</p>
+let clientsSliderClientHTML = ''
+slideClients.forEach((client, index) => {
+    if (clientsSliderWrapper) {
+        clientsSliderClientHTML += `
+        <div class="clients-slider-client">
+            <div class="client-image-container">
+                <img loading="lazy"  src="${client.image}" alt="${client.name}">
             </div>
         </div>
         `;
-        featuredClientsWrapper.innerHTML = featuredClientsCardsHTML;
     }
 });
+clientsSliderClientHTML += clientsSliderClientHTML;
+clientsSliderWrapper.innerHTML = clientsSliderClientHTML;
 
-const featuredClientsTl = gsap.timeline({
+
+const slideClientsTl = gsap.timeline({
     scrollTrigger: {
-        trigger: featuredClientsWrapper,
-        start: "top 50%",
-        toggleActions: "play none none none",
-        once: true,
+        trigger: '.clients-slider',
+        start: 'top 70%',
+        end: 'bottom 20%',
+        toggleActions: 'play none none none',
     },
 });
-const featuredClientsCards = featuredClientsWrapper.querySelectorAll('.slide-inner');
 
-featuredClientsTl.to(featuredClientsCards, {
-    rotateX: 20,  // Slight X-axis tilt for 3D effect
-    rotateZ: 10,  // Slight Z-axis tilt for 3D effect
-    rotateY: 90,  // Start flipping halfway on Y-axis
-    duration: 0.4,
-    ease: "power1.out",
-    stagger: {
-        each: 0.4,  // Delay of 0.1 seconds between each card's animation
-        onStart: function () {
-            // Delay the shine effect by 0.2 seconds
-            gsap.delayedCall(.2, function () {
-                // Select the current card's shine element
-                const shine = this.targets()[0].querySelector('.shine');
-                // Animate the shine for the current card
-                gsap.fromTo(shine, 
-                {
-                    top: '-100%',
-                    left: '-100%',
-                    opacity: 0.5
-                }, 
-                {
-                    top: '100%',
-                    left: '100%',
-                    opacity: 0.2,  // Shine intensity
-                    duration: 1,  // Duration of the shine effect
-                    ease: "power2.inOut"
-                });
-            }.bind(this));  // Ensure the context of "this" is passed correctly
+slideClientsTl.from('.clients-slider-client', {
+    duration: 0.7,
+    autoAlpha: 0,
+    ease: 'power4.out',
+    xPercent: 100,
+    stagger: .5
+})
+
+const loopAnimation = gsap.to('.clients-slider', {
+    xPercent: -50,
+    duration: slideClients.length * 1.5,
+    ease: 'none',
+    repeat: -1
+});
+
+const slideClientsElements = clientsSliderWrapper.querySelectorAll('.clients-slider-client')
+
+const totalClients = slideClientsElements.length;
+
+slideClientsElements.forEach((client, index) => {
+    client.addEventListener('mouseenter', () => {
+        loopAnimation.pause();
+
+        // Determine the range of indices to apply the not-hovered class
+        const start = Math.max(0, index - 5);  // Ensure we don't go below index 0
+        const end = Math.min(totalClients - 1, index + 5);  // Ensure we don't go beyond the last index
+
+        // Loop through the clients within the range
+        for (let i = start; i <= end; i++) {
+            if (slideClientsElements[i] !== client) {
+                slideClientsElements[i].classList.add('not-hovered');
+            }
         }
-    }
-}).to(featuredClientsCards, {
-    rotateX: 0,   // Reset X-axis tilt
-    rotateZ: 0,   // Reset Z-axis tilt
-    rotateY: 180, // Complete the Y-axis flip
-    duration: 0.4,
-    ease: "power2.inOut",
-    stagger: 0.4, 
-}).from('.featured-client .client-info h4', {
-    y: -10,
-    autoAlpha: 0,
-    duration: 0.3,
-    ease: "power2.inOut",
-    stagger: 0.4,
-}, '<').from('.featured-client .client-info p', {
-    y: -10,
-    autoAlpha: 0,
-    duration: 0.3,
-    ease: "power2.inOut",
-    stagger: 0.4,
-}, '<');
+
+        client.classList.add('hovered');
+    });
+
+    client.addEventListener('mouseleave', () => {
+        loopAnimation.resume();
+
+        // Remove the not-hovered class within the same range
+        const start = Math.max(0, index - 5);
+        const end = Math.min(totalClients - 1, index + 5);
+
+        for (let i = start; i <= end; i++) {
+            slideClientsElements[i].classList.remove('not-hovered');
+        }
+
+        client.classList.remove('hovered');
+    });
+});
+// const featuredClientsTl = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: featuredClientsWrapper,
+//         start: "top 50%",
+//         toggleActions: "play none none none",
+//         once: true,
+//     },
+// });
+// const featuredClientsCards = featuredClientsWrapper.querySelectorAll('.slide-inner');
+
+// featuredClientsTl.to(featuredClientsCards, {
+//     rotateX: 20,  // Slight X-axis tilt for 3D effect
+//     rotateZ: 10,  // Slight Z-axis tilt for 3D effect
+//     rotateY: 90,  // Start flipping halfway on Y-axis
+//     duration: 0.4,
+//     ease: "power1.out",
+//     stagger: {
+//         each: 0.4,  // Delay of 0.1 seconds between each card's animation
+//         onStart: function () {
+//             // Delay the shine effect by 0.2 seconds
+//             gsap.delayedCall(.2, function () {
+//                 // Select the current card's shine element
+//                 const shine = this.targets()[0].querySelector('.shine');
+//                 // Animate the shine for the current card
+//                 gsap.fromTo(shine, 
+//                 {
+//                     top: '-100%',
+//                     left: '-100%',
+//                     opacity: 0.5
+//                 }, 
+//                 {
+//                     top: '100%',
+//                     left: '100%',
+//                     opacity: 0.2,  // Shine intensity
+//                     duration: 1,  // Duration of the shine effect
+//                     ease: "power2.inOut"
+//                 });
+//             }.bind(this));  // Ensure the context of "this" is passed correctly
+//         }
+//     }
+// }).to(featuredClientsCards, {
+//     rotateX: 0,   // Reset X-axis tilt
+//     rotateZ: 0,   // Reset Z-axis tilt
+//     rotateY: 180, // Complete the Y-axis flip
+//     duration: 0.4,
+//     ease: "power2.inOut",
+//     stagger: 0.4, 
+// }).from('.featured-client .client-info h4', {
+//     y: -10,
+//     autoAlpha: 0,
+//     duration: 0.3,
+//     ease: "power2.inOut",
+//     stagger: 0.4,
+// }, '<').from('.featured-client .client-info p', {
+//     y: -10,
+//     autoAlpha: 0,
+//     duration: 0.3,
+//     ease: "power2.inOut",
+//     stagger: 0.4,
+// }, '<');
 
 
 const mainTl = gsap.timeline({
