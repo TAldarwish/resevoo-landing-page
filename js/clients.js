@@ -1,51 +1,51 @@
 const clients = [
     {
-        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
         name: 'Le Cinq',
-        address: '31 Avenue George V, 75008 Paris, France'
+        address: '91 Avenue George V, 75008 Paris, France'
     },
     {
-        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
         name: 'Eleven Madison Park',
         address: '11 Madison Ave, New York, NY 10010, USA'
     },
     {
-        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
         name: 'Osteria Francescana',
         address: 'Via Stella, 22, 41121 Modena MO, Italy'
     },
     {
-        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
         name: 'The French Laundry',
         address: '6640 Washington St, Yountville, CA 94599, USA'
     },
     {
-        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
         name: 'Narisawa',
         address: '2 Chome-6-15 Minamiaoyama, Minato City, Tokyo 107-0062, Japan'
     },
     {
-        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
         name: 'Alinea',
-        address: '1723 N Halsted St, Chicago, IL 60614, USA'
+        address: '1729 N Halsted St, Chicago, IL 60614, USA'
     },
     {
-        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
         name: 'Azurmendi',
         address: 'Barrio Legina s/n, 48195 Larrabetzu, Bizkaia, Spain'
     },
     {
-        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
         name: 'Per Se',
         address: '10 Columbus Cir, New York, NY 10019, USA'
     },
     {
-        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
         name: 'The Fat Duck',
         address: 'High St, Bray SL6 2AQ, United Kingdom'
     },
     {
-        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
         name: 'Gaggan',
         address: '68/1 Soi Langsuan, Ploenchit Road, Lumpini, Bangkok, Thailand'
     },
@@ -53,22 +53,22 @@ const clients = [
 
 const slideClients = [
     {
-        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
         name: 'Le Bernardin',
         address: '155 W 51st St, New York, NY 10019, USA'
     },
     {
-        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
         name: 'Restaurant Guy Savoy',
         address: 'Monnaie de Paris, 11 Quai de Conti, 75006 Paris, France'
     },
     {
-        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
         name: 'Arpège',
         address: '84 Rue de Varenne, 75007 Paris, France'
     },
     {
-        image: `./img/restaurant-${Math.floor(Math.random() * 3) + 1}.webp`,
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
         name: 'Le Bernardin',
         address: '155 W 51st St, New York, NY 10019, USA'
     },
@@ -86,6 +86,7 @@ clientAddressElement.textContent = clients[0].address;
 // Dynamically create the Swiper slides based on client data
 let clientCardsHTML = '';
 clients.forEach((client, index) => {
+    console.log(client.image)
     if (swiperWrapper) {
         clientCardsHTML += `
         <div class="swiper-slide client-slide">
