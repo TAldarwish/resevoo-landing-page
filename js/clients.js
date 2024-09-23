@@ -235,7 +235,7 @@ slideClientsTl.from('.clients-slider-client', {
     autoAlpha: 0,
     ease: 'power4.out',
     xPercent: 100,
-    stagger: .5
+    stagger: .3
 })
 
 const loopAnimation = gsap.to('.clients-slider', {
