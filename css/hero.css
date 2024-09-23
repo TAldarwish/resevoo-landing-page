@@ -23,7 +23,7 @@
 .hero .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, hsl(from black h s l / .7), hsl(from black h s l / 1));
+    background: linear-gradient(to bottom, transparent, hsl(from var(--clr-black) h s l / .5),hsl(from var(--clr-black) h s l / .5),hsl(from var(--clr-black) h s l / .5) 80%, transparent);
     opacity: .7;
     z-index: -1;
 }
