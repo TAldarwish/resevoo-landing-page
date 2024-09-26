@@ -72,6 +72,36 @@ const slideClients = [
         name: 'Le Bernardin',
         address: '155 W 51st St, New York, NY 10019, USA'
     },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
 ];
 const swiperWrapper = document.querySelector('.swiper-wrapper');
 const clientsSliderWrapper = document.querySelector('.clients-slider');
@@ -241,7 +271,7 @@ slideClientsTl.from('.clients-slider-client', {
 
 const loopAnimation = gsap.to('.clients-slider', {
     xPercent: -50,
-    duration: slideClients.length * 1.5,
+    duration: slideClients.length * 5,
     ease: 'none',
     repeat: -1
 });

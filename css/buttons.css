@@ -1,0 +1,170 @@
+/* BUTTONS */
+
+/* OLD VERSION */
+/* .btn {
+    --border-radius: 80px;
+    --border-size: .5rem;
+    --padding-y: .5rem;
+    --padding-x: 2rem;
+    --border-bg: linear-gradient(to left,
+            #FEDB37 0%,
+            #FDB931 5%,
+            #9f7928 10%,
+            #9f7928 20%,
+            #FDB931 30%,
+            transparent 50%);
+    position: relative;
+    overflow: hidden;
+    border: none;
+    padding: calc(var(--padding-y) + var(--border-size)) calc(var(--padding-x) + var(--border-size));
+    border-radius: var(--border-radius);
+    display: inline-block;
+    background-color: transparent;
+    font-weight: bold;
+    font-family: var(--font-header);
+    letter-spacing: .2ch;
+    transition: box-shadow 300ms ease-out;
+    cursor: pointer;
+    outline: none;
+    width: fit-content
+}
+
+.btn::after {
+    content: '';
+    display: block;
+    background-image: var(--border-bg);
+    width: calc(100% * 1.41421356237);
+    padding-bottom: calc(100% * 1.41421356237);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    border-radius: 100%;
+    z-index: -2;
+}
+
+.btn .glass-bg-container {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    width: calc(100% - 3px);
+    height: calc(100% - 3px);
+    opacity: .5;
+    background: black;
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.btn .glass-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    background: black;
+    z-index: -1;
+    border-radius: inherit;
+    inset: 2px;
+}
+
+.btn .btn-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #8f6B29, #FDE08D, #DF9F28, transparent 40%);
+    opacity: .2;
+    background-position: 0% 0%;
+    background-size: 100% 200%;
+    transition: background-position 200ms linear;
+}
+
+.btn:hover .btn-overlay,
+.btn:focus-visible .btn-overlay {
+    background-position: 0% 50%;
+}
+
+
+
+.btn:hover::after,
+.btn:focus-visible::after {
+    animation: spin 2000ms linear forwards;
+}
+
+.btn:hover,
+.btn:focus-visible {
+    box-shadow: 0 2px 1px 0 rgba(255, 215, 0, 0.1), 0 2px 2px 0 rgba(255, 215, 0, 0.1), 0 2px 3px 0 rgba(255, 215, 0, 0.1);
+}
+
+.btn .gold-text {
+    background:
+        linear-gradient(to left, #FEDB37 0%, #FDB931 4%, #d6a438 15%, #a07d2b 20%, var(--clr-primary) 50%, var(--clr-primary) 50%),
+        linear-gradient(to left, #FFFFFF 0%, #FFFFAC 8%, #daa821 25%, #b68f33 62.5%, #5d4a1f 100%);
+    background-size: 210%;
+    background-position: 100%;
+    transition: background-position 300ms ease-in;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.btn:hover .gold-text,
+.btn:focus-visible .gold-text {
+    background-position: 0%;
+}
+ */
+
+
+.btn{
+
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(
+        to right,
+        #77530a,
+        var(--clr-primary),
+        #77530a,
+        #77530a,
+        var(--clr-primary),
+        #77530a
+    );
+    background-size: 250%;
+    background-position: left;
+    color: var(--clr-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-position 1s, scale 1s;
+    position: relative;
+    padding: 1px 3px;
+}
+
+.btn span {
+    color: var(--clr-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 97%;
+    border-radius: 10px;
+    transition: background-position 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+    width: fit-content;
+    padding: .5rem 2rem;
+}
+
+.btn:hover {
+    background-position: right;
+}
+
+.btn:hover::before {
+    background-position: right;
+}
+.btn:active {
+    scale: .95;
+}
