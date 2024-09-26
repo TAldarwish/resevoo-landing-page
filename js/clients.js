@@ -271,7 +271,7 @@ slideClientsTl.from('.clients-slider-client', {
 
 const loopAnimation = gsap.to('.clients-slider', {
     xPercent: -50,
-    duration: slideClients.length * 5,
+    duration: slideClients.length * 2,
     ease: 'none',
     repeat: -1
 });
