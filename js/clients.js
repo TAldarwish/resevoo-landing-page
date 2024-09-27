@@ -102,6 +102,296 @@ const slideClients = [
         name: 'Le Bernardin',
         address: '155 W 51st St, New York, NY 10019, USA'
     },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Arpège',
+        address: '84 Rue de Varenne, 75007 Paris, France'
+    },
+    {
+        image: `./img/restaurant-${Math.floor(Math.random() * 9) + 1}.webp`,
+        name: 'Le Bernardin',
+        address: '155 W 51st St, New York, NY 10019, USA'
+    },
 ];
 const swiperWrapper = document.querySelector('.swiper-wrapper');
 const clientsSliderWrapper = document.querySelector('.clients-slider');
@@ -266,11 +556,11 @@ slideClientsTl.from('.clients-slider-client', {
     autoAlpha: 0,
     ease: 'power4.out',
     xPercent: 100,
-    stagger: .3
+    stagger: .2
 })
 
 const loopAnimation = gsap.to('.clients-slider', {
-    xPercent: -50,
+    x: () => `-50%`,
     duration: slideClients.length * 2,
     ease: 'none',
     repeat: -1
@@ -280,38 +570,63 @@ const slideClientsElements = clientsSliderWrapper.querySelectorAll('.clients-sli
 
 const totalClients = slideClientsElements.length;
 
+const addNotHoveredClasses = (start, end, client) => {
+    // Batch adding not-hovered class
+    const elementsToUpdate = Array.from(slideClientsElements).slice(start, end + 1);
+    elementsToUpdate.forEach((el) => {
+        if (el !== client) {
+            el.classList.add('not-hovered');
+        }
+    });
+};
+
+const removeNotHoveredClasses = (start, end) => {
+    // Batch removing not-hovered class
+    const elementsToUpdate = Array.from(slideClientsElements).slice(start, end + 1);
+    elementsToUpdate.forEach((el) => {
+        el.classList.remove('not-hovered');
+    });
+};
+
+const debounce = (func, delay) => {
+    let timeout;
+    return (...args) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), delay);
+    };
+};
+
 slideClientsElements.forEach((client, index) => {
-    client.addEventListener('mouseenter', () => {
+    const handleMouseEnter = debounce(() => {
         loopAnimation.pause();
 
-        // Determine the range of indices to apply the not-hovered class
-        const start = Math.max(0, index - 5);  // Ensure we don't go below index 0
-        const end = Math.min(totalClients - 1, index + 5);  // Ensure we don't go beyond the last index
-
-        // Loop through the clients within the range
-        for (let i = start; i <= end; i++) {
-            if (slideClientsElements[i] !== client) {
-                slideClientsElements[i].classList.add('not-hovered');
-            }
-        }
-
-        client.classList.add('hovered');
-    });
-
-    client.addEventListener('mouseleave', () => {
-        loopAnimation.resume();
-
-        // Remove the not-hovered class within the same range
         const start = Math.max(0, index - 5);
         const end = Math.min(totalClients - 1, index + 5);
 
-        for (let i = start; i <= end; i++) {
-            slideClientsElements[i].classList.remove('not-hovered');
-        }
+        addNotHoveredClasses(start, end, client);
+
+        client.classList.add('hovered');
+    }, 100); // Delay the event trigger by 100ms
+
+    const handleMouseLeave = debounce(() => {
+        loopAnimation.resume();
+
+        const start = Math.max(0, index - 5);
+        const end = Math.min(totalClients - 1, index + 5);
+
+        removeNotHoveredClasses(start, end);
 
         client.classList.remove('hovered');
-    });
+    }, 100); // Delay the event trigger by 100ms
+
+    client.addEventListener('mouseenter', handleMouseEnter);
+    client.addEventListener('mouseleave', handleMouseLeave);
 });
+
+
+
+
+
 // const featuredClientsTl = gsap.timeline({
 //     scrollTrigger: {
 //         trigger: featuredClientsWrapper,

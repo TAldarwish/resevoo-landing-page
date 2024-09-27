@@ -20,12 +20,12 @@ tl.from(".hero .headline", {
     autoAlpha: 0,
     duration: .7,
     ease: 'power3.out'
-}, '-=.3').from(".hero .btn:first-child", {
+}, '-=.3').from(".hero button:first-child", {
     xPercent: -200,
     autoAlpha: 0,
     duration: .7,
     ease: 'expo.out'
-}, '-=.3').from(".hero .btn:last-child", {
+}, '-=.3').from(".hero button:last-child", {
     xPercent: 200,
     autoAlpha: 0,
     duration: .7,

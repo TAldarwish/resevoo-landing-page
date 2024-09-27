@@ -118,6 +118,7 @@
  */
 
 
+/* VERSION 1 */
 .btn{
 
     border: none;
@@ -167,4 +168,54 @@
 }
 .btn:active {
     scale: .95;
+}
+
+
+/* VERSION 2 */
+.btn-2 {
+    border: none;
+    padding: .75rem 3rem;
+    cursor: pointer;
+    outline-offset: -2px;
+    transition: 200ms ease-in-out;
+    transition-property: outline-offset, background-color, scale;
+    text-wrap: pretty;
+    background-color: var(--clr-primary);
+    outline: 2px solid hsl(from var(--clr-primary) h s l / 1);
+    color: var(--clr-black);
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.btn-2:hover,
+.btn-2:focus-visible {
+    outline-offset: 2px;
+    background-color: hsl(from var(--clr-primary) h s 30% / 1);
+}
+.btn-2:active {
+    scale: .95 !important;
+}
+.btn-3 {
+    border: none;
+    padding: .75rem 3rem;
+    cursor: pointer;
+    outline-offset: -2px;
+    transition: 200ms ease-in-out;
+    transition-property: box-shadow, scale;
+    text-wrap: pretty;
+    background: url('../img/btn-bg.webp');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: 2px solid hsl(from var(--clr-primary) h s l / 1);
+    color: var(--clr-black);
+    /* border-radius: 25px; */
+    font-weight: bold;
+    box-shadow: 0 0 0 hsl(from var(--clr-primary) h s l / .5), 0 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.btn-3:hover,
+.btn-3:focus-visible {
+    box-shadow: 0 4px 6px hsl(from var(--clr-primary) h s l / .5), 0 1px 3px rgba(0, 0, 0, 0.3);
+    scale: 1.05 !important;
 }
