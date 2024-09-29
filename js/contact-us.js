@@ -8,16 +8,16 @@ const tl1 = gsap.timeline({
     }
 });
 
-tl1.from([".contact-us .title", ".contact-us .subtitle"], {
-    yPercent: 200,
+tl1.from([".contact-us .content .title", ".contact-us .content .subtitle"], {
+    yPercent: 300,
     duration: 1,
     autoAlpha: 0,
-    stagger: .3,
-    ease: 'power3.out'
+    stagger: .2,
+    ease: 'power3.inOut'
 }).from(".contact-us .form-group", {
     yPercent: 100,
-    duration: .7,
+    duration: .4,
     autoAlpha: 0,
-    stagger: .3,
+    stagger: .2,
     ease: 'power3.out'
-})
+}, '-=.4')
