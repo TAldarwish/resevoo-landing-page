@@ -118,6 +118,7 @@ footer .navigation ul {
     display: flex;
     flex-direction: column;
     padding: 0;
+    gap: .5rem;
 }
 footer .navigation .navigation-link {
     font-size: 1.5rem;

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resevoo</title>
+    <title>Resevoo - Contact Us</title>
 
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
@@ -12,21 +12,17 @@
     <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" sizes="180x180">
 
 
+    <link rel="stylesheet" href="./css/contact-us.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/buttons.css">
-    <link rel="stylesheet" href="./css/hero.css">
-    <link rel="stylesheet" href="./css/clients.css">
     <link rel="stylesheet" href="./css/golden-mouse.css">
-    <link rel="stylesheet" href="./css/cta-section.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
 
-    <script type="text/javascript" defer src="./js/hero.js"></script>
-    <script type="text/javascript" defer src="./js/clients.js"></script>
+    <script type="text/javascript" defer src="./js/contact-us.js"></script>
     <script type="text/javascript" defer src="./js/navbar.js"></script>
     <script type="text/javascript" defer src="./js/golden-mouse.js"></script>
-    <script type="text/javascript" defer src="./js/cta-section.js"></script>
     <script type="text/javascript" defer src="./js/buttons.js"></script>
     <script type="text/javascript" defer src="./js/social-media.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -58,7 +54,7 @@
                         </span>
                     </a>
                 </li>
-                <li><a class="navigation-link" href="./contact-us.html#">
+                <li><a class="navigation-link active" href="./contact-us.html#">
                         <span>
                             Contact Us
                         </span>
@@ -88,7 +84,7 @@
             <ul>
                 <li><a class="navigation-link" href="./about-us.html#"><span>About Us</span></a></li>
                 <li><a class="navigation-link" href="./#browseRestaurantSection"><span>Partners</span></a></li>
-                <li><a class="navigation-link" href="./contact-us.html#"><span>Contact Us</span></a></li>
+                <li><a class="navigation-link active" href="./contact-us.html#"><span>Contact Us</span></a></li>
                 <li>
                     <button data-scroll data-scroll-target="#downloadAppSection" class="btn">
                         <span>
@@ -101,92 +97,43 @@
     </aside>
     <div id="overlay" class="page-overlay"></div>
     <main class="base-layout">
-        <section class="hero full-width">
-            <img loading="lazy" class="hero-img" src="./img/hero-bg.webp" alt="">
-            <div class="hero-overlay"></div>
-
-            <h1 class="headline">
-                Reserve Your Culinary <span class="gold-filling"> Experience</span> Of A Lifetime
-            </h1>
-            <h2 class="sub-headline">
-                Discover Exquisite Dining At The Finest Restaurants With Just A Few Taps
-            </h2>
-            <div class="buttons">
-
-                <button data-scroll data-scroll-target="#downloadAppSection" class="btn-2">
-                    <span>
-                        Download App
-                    </span>
-                    </button>
-                <button data-scroll data-scroll-target="#browseRestaurantSection" class="btn-3">
-                    <span>
-                        Browse Restaurants
-                    </span>
-                    </button>
-            </div>
-
-        </section>
-        <section id="browseRestaurantSection" class="clients full-width">
-            <div class="base-layout">
-                <h2 class="title">
-                    Partnering With The Finest In Culinary Excellence
-                </h2>
-                <p class="sub-title">
-                    Trusted by renowned restaurants to elevate their dining experience with seamless reservations and
-                    exceptional service.
-                </p>
-            </div>
-            <div class="clients-slider">
-                <!-- DONE USING JS -->
-            </div>
-            <div class="clients-slider clients-slider-part-2">
-                <!-- DONE USING JS -->
-            </div>
-            <div class="base-layout">
-                <div class="clients-flex">
-                    <div class="client-info">
-                        <!-- DONE USING JS -->
-                        <h4 id="client-name"></h4>
-                        <p id="client-address"></p>
-                    </div>
-                    <div class="swiper clients-swiper">
-                        <div class="swiper-wrapper">
-                            <!-- DONE USING JS -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="downloadAppSection" class="cta-section full-width base-layout">
-            <div class="cta-section-inner">
+        <section class="contact-us full-width base-layout">
+            <div class="contact-us-inner">
                 <div class="content">
-                    <h3 class="title">Download <span class="gold-filling">Resevoo</span> Now</h3>
-                    <p class="subtitle">The revolutionary app that changes the dynamic of your UAE vacation & lifestyle.
-                        Experience world class dining experiences with a tap of your finger.
-                        <br />
-                        Available On App Store & Google Play Store.
-                    </p>
-                    <div class="slogan
-                     gold-filling">
-                        Deserve It? Reserve It. Resevoo
-                    </div>
-                    <div class="buttons">
-                        <button aria-label="App Store download button">
-                            <img loading="lazy" src="./img/app-store.webp" alt="App Store download button">
-                        </button>
-                        <button aria-label="Google Play Store download button">
-                            <img loading="lazy" src="./img/google-play.webp" alt="Google Play Store download button">
-                        </button>
-                    </div>
+                    <h3 class="title">Contact Us</h3>
+                    <p class="subtitle">We're here to help! Reach out to us for any inquiries or assistance, and we'll
+                        get back to you as soon as possible.</p>
                 </div>
-                <div class="phone">
-                    <img loading="lazy" class="frame" src="./img/iphone-frame.webp" alt="">
-                    <!-- <video class="screenshot" muted autoplay loop>
-                        <source src="./img/demo-video.webm" type="video/webm">
-                        <source src="./img/demo-video.mp4" type="video/mp4">
-                    </video> -->
-                    <img loading="lazy" class="screenshot" src="./img/phone-bg.webp" alt="">
-                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="first-name" class="sr-only">First Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="First name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name" class="sr-only">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="sr-only">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group spread">
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="form-group right">
+
+                        <button type="submit" class="btn submit-btn">
+                            <span>
+                                Send Message
+                            </span>
+                        </button>
+                    </div>
+                </form>
             </div>
         </section>
         <footer class="full-width base-layout">
@@ -201,7 +148,7 @@
                     <ul>
                         <a href="./about-us.html#" class="navigation-link"><span>About Us</span></a>
                         <a href="./#browseRestaurantSection" class="navigation-link"><span>Partners</span></a>
-                        <a href="./contact-us.html#" class="navigation-link"><span>Contact Us</span></a>
+                        <a href="./contact-us.html#" class="navigation-link active"><span>Contact Us</span></a>
                     </ul>
                 </div>
                 <div class="footer-links">

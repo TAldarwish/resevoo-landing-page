@@ -49,6 +49,18 @@ h5,
 h6 {
     overflow-wrap: break-word;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+    line-height: 1.1;
+}
+p {
+    text-wrap: pretty;
+}
 
 #root,
 #__next {
@@ -163,7 +175,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 9999;
-    background-color: hsl(from var(--clr-primary) h s 0% / .3);
+    background-color: hsl(from var(--clr-primary) h s 0% / .7);
     backdrop-filter: blur(10px);
     transition: background-color 200ms ease-in;
     height: 7svh;
@@ -340,6 +352,7 @@ header .right {
     display: inline-block;
     padding: 0 1px;
     transition: color ease 0.3s;
+    padding-inline: .5rem;
   
 }
 .navigation-link::before {
@@ -359,13 +372,41 @@ header .right {
     transition: color ease 0.3s;
 }
 .navigation-link:hover::before,
-.navigation-link:focus-visible::before {
+.navigation-link:focus-visible::before,
+.navigation-link.active::before {
     height: 100%;
 }
 
 .navigation-link:hover span,
-.navigation-link:focus-visible span {
+.navigation-link:focus-visible span,
+.navigation-link.active span {
     color: var(--clr-white);
+}
+
+/* SR ONLY */
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+		clip-path: inset(50%) !important; 
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+	clip: auto !important;
+	-webkit-clip-path: none !important;
+		clip-path: none !important;
+	height: auto !important;
+	margin: auto !important;
+	overflow: visible !important;
+	width: auto !important;
+	white-space: normal !important;
 }
 
 @keyframes spin {

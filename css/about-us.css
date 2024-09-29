@@ -1,0 +1,49 @@
+.about-us {
+    margin-block-start: 7svh;
+}
+.section-1,
+.section-3 {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    text-align: center;
+}
+
+.section-1 .title {
+    font-size: 3rem;
+    margin-block-end: 3rem;
+    text-transform: capitalize;
+}
+
+.section-1 .gold-filling,
+.section-3 .gold-filling {
+    background:
+        linear-gradient(45deg, #FEDB37 0%, #FDB931 12%, #d6a438 20%, #a07d2b 35%, var(--clr-black) 50%, var(--clr-black) 50%);
+    background-size: 300%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-1 .subtitle,
+.section-3 .subtitle {
+    margin-block-end: 1rem;
+    font-size: 2rem;
+}
+
+.section-1 p,
+.section-2 p,
+.section-3 p {
+    font-size: 1.25rem;
+    margin-block: 1rem;
+}
+
+.section-2 .content {
+    display: grid;
+    grid-template-columns: 40% auto;
+    align-items: center;
+}
+
+.bold {
+    font-weight: bold;
+}
