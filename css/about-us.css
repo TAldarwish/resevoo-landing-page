@@ -3,11 +3,14 @@
 }
 .section-1,
 .section-3 {
-    background-color: var(--clr-white);
-    color: var(--clr-black);
+    /* background-color: var(--clr-white); */
+    /* color: var(--clr-black); */
+    position: relative;
     text-align: center;
 }
-
+.section-2 {
+    position: relative;
+}
 .section-1 .title {
     font-size: 3rem;
     margin-block-end: 3rem;
@@ -17,7 +20,7 @@
 .section-1 .gold-filling,
 .section-3 .gold-filling {
     background:
-        linear-gradient(45deg, #FEDB37 0%, #FDB931 12%, #d6a438 20%, #a07d2b 35%, var(--clr-black) 50%, var(--clr-black) 50%);
+        linear-gradient(45deg, #FEDB37 0%, #FDB931 12%, #d6a438 20%, #a07d2b 35%, var(--clr-white) 50%, var(--clr-white) 50%);
     background-size: 300%;
     background-position: 100% 0;
     -webkit-background-clip: text;
