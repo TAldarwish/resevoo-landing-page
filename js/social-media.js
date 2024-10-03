@@ -28,7 +28,7 @@ socialMediaList.forEach((socialMedia, index) => {
     if (socialMediaListElement) {
         socialMediaHTML += `
         <a class="social-media" target="_blank" href="${socialMedia.url}">
-            <img loading="lazy"  src="${socialMedia.svg}" alt="${socialMedia.name}">
+            <img src="${socialMedia.svg}" alt="${socialMedia.name}">
         </a>
         `;
         socialMediaListElement.innerHTML = socialMediaHTML;

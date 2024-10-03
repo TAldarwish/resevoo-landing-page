@@ -413,10 +413,10 @@ clients.forEach((client, index) => {
             <div class="slide-inner ${index === 0 ? 'flipped' : ''}">
                 <div class="slide-front">
                     <div class="shine"></div>
-                    <img loading="lazy"  class="resevoo" src="./img/logo.webp" alt="Card Back Face">
+                    <img  class="resevoo" src="./img/logo.webp" alt="Card Back Face">
                 </div>
                 <div class="slide-back">
-                    <img loading="lazy"  src="${client.image}" alt="${client.name}">
+                    <img  src="${client.image}" alt="${client.name}">
                 </div>
             </div>
         </div>
@@ -532,7 +532,7 @@ slideClients.forEach((client, index) => {
         clientsSliderClientHTML += `
         <div class="clients-slider-client">
             <div class="client-image-container">
-                <img loading="lazy"  src="${client.image}" alt="${client.name}">
+                <img  src="${client.image}" alt="${client.name}">
             </div>
         </div>
         `;
