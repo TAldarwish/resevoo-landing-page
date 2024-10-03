@@ -188,6 +188,10 @@
     background-repeat: no-repeat;
 }
 
+.clients .btn-position {
+    margin-inline: auto;
+}
+
 /* .featured-clients {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
