@@ -1,6 +1,6 @@
 .cta-section {
-    background-color: var(--clr-white);
-    color: var(--clr-black);
+    background-color: var(--clr-black);
+    color: var(--clr-white);
 }
 .cta-section-inner {
     display: grid;
@@ -48,13 +48,22 @@
 
 .cta-section .phone {
     position: relative;    
-    overflow: hidden;
+    /* overflow: hidden; */
     isolation: isolate;
     width: 200px;
     border-radius: 30px;
     place-self: center;
 }
-
+.cta-section .bg-position {
+    position: absolute;
+    z-index: -1;
+    inset: -10% -20%;
+    overflow: visible;
+}
+.cta-section .bg {
+    width: 100%;
+    height: 100%;
+}
 .cta-section .phone .frame {
     width: 200px;
 }
@@ -72,7 +81,7 @@
 
 .cta-section .gold-filling {
     background:
-        linear-gradient(45deg, #FEDB37 0%, #FDB931 12%, #d6a438 20%, #a07d2b 35%, var(--clr-black) 50%, var(--clr-black) 50%);
+        linear-gradient(45deg, #FEDB37 0%, #FDB931 12%, #d6a438 20%, #a07d2b 35%, var(--clr-white) 50%, var(--clr-white) 50%);
     background-size: 300%;
     background-position: 100% 0;
     -webkit-background-clip: text;

@@ -38,10 +38,14 @@ ctaTl.from('.cta-section .title', {
     backgroundPosition: '0',
     duration: .7,
     ease: 'power3.out'
-}, '<').from('.cta-section .phone', {
+}, '<').from(['.cta-section .phone .frame', '.cta-section .phone .screenshot' ], {
     xPercent: 200,
     rotateZ: 30,
     autoAlpha: 0,
     duration: .5,
     ease: 'power3.out'
-}, '<')
+}, '<').from('.cta-section .phone .bg', {
+    scale: 0,
+    duration: .3,
+    ease: 'power3.out'
+}, '=-1.5')

@@ -19,7 +19,12 @@ tl.from(".hero .headline", {
     autoAlpha: 0,
     duration: .7,
     ease: 'power3.out'
-}, '-=.3').from(".hero button:first-child", {
+}, '-=.3').from(".hero button:nth-child(2)", {
+    yPercent: 100,
+    autoAlpha: 0,
+    duration: .7,
+    ease: 'power3.out'
+}, '<').from(".hero button:first-child", {
     xPercent: -200,
     autoAlpha: 0,
     duration: .7,

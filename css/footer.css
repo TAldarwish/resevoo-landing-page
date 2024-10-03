@@ -26,8 +26,12 @@ footer .footer-overlay {
 
 footer .logo {
     width: min(250px, 80%);
+    transition: scale 200ms ease-out;
 }
-
+footer .logo:hover,
+footer .logo:focus-visible {
+    scale: 1.08;
+}
 footer .footer-links {
     width: 100%;
     display: flex;

@@ -147,6 +147,7 @@
     width: 20svw;
     overflow: hidden;
     transition: border-radius 300ms ease-out, filter 300ms ease-in-out;
+    border: 2px solid var(--clr-primary);
 }
 
 .clients-slider-client img {
@@ -165,6 +166,28 @@
 .clients-slider .clients-slider-client.not-hovered {
     filter: blur(4px) grayscale(.5);
 }
+.clients-slider-outer {
+    position: relative;
+}
+
+.clients-slider-outer::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    max-width: 100svw;
+    background: linear-gradient(to right,
+            #FEDB37 0%,
+            #FDB931 5%,
+            #9f7928 10%,
+            #9f7928 20%,
+            #FDB931 30%,
+            transparent 65%);
+    background-repeat: no-repeat;
+}
+
 /* .featured-clients {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

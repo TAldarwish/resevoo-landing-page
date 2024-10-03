@@ -101,7 +101,7 @@
     </aside>
     <div id="overlay" class="page-overlay"></div>
     <main class="base-layout">
-        <section class="hero full-width">
+        <section class="hero full-width bordered-gold">
             <img loading="lazy" class="hero-img" src="./img/hero-bg.webp" alt="">
             <div class="hero-overlay"></div>
 
@@ -113,21 +113,26 @@
             </h2>
             <div class="buttons">
 
-                <button data-scroll data-scroll-target="#downloadAppSection" class="btn-2">
+                <button data-scroll data-scroll-target="#downloadAppSection" class="btn">
                     <span>
                         Download App
                     </span>
-                    </button>
-                <button data-scroll data-scroll-target="#browseRestaurantSection" class="btn-3">
+                </button>
+                <button data-scroll data-scroll-target="#browseRestaurantSection" class="btn">
                     <span>
                         Browse Restaurants
                     </span>
-                    </button>
+                </button>
+                <button class="btn">
+                    <span>
+                        View All Restaurants
+                    </span>
+                </button>
             </div>
 
         </section>
         <section id="browseRestaurantSection" class="clients full-width">
-            <div class="base-layout">
+            <div class="base-layout ">
                 <h2 class="title">
                     Partnering With The Finest In Culinary Excellence
                 </h2>
@@ -136,13 +141,12 @@
                     exceptional service.
                 </p>
             </div>
-            <div class="clients-slider">
-                <!-- DONE USING JS -->
+            <div class="clients-slider-outer">
+                <div class="clients-slider">
+                    <!-- DONE USING JS -->
+                </div>
             </div>
-            <div class="clients-slider clients-slider-part-2">
-                <!-- DONE USING JS -->
-            </div>
-            <div class="base-layout">
+            <div class="base-layout bordered-gold">
                 <div class="clients-flex">
                     <div class="client-info">
                         <!-- DONE USING JS -->
@@ -157,9 +161,9 @@
                 </div>
             </div>
         </section>
-        <section id="downloadAppSection" class="cta-section full-width base-layout">
+        <section id="downloadAppSection" class="cta-section">
             <div class="cta-section-inner">
-                <div class="content">
+                <div class="content bordered-gold">
                     <h3 class="title">Download <span class="gold-filling">Resevoo</span> Now</h3>
                     <p class="subtitle">The revolutionary app that changes the dynamic of your UAE vacation & lifestyle.
                         Experience world class dining experiences with a tap of your finger.
@@ -180,6 +184,9 @@
                     </div>
                 </div>
                 <div class="phone">
+                    <div class="bg-position">
+                        <img loading="lazy" class="bg" src="./img/gold-splash.webp" alt="">
+                    </div>
                     <img loading="lazy" class="frame" src="./img/iphone-frame.webp" alt="">
                     <!-- <video class="screenshot" muted autoplay loop>
                         <source src="./img/demo-video.webm" type="video/webm">
